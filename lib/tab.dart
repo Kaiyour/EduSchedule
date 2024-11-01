@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pertemuan5/tabbar_contact.dart';
-import 'package:pertemuan5/tabbar_home.dart';
+import 'package:project1/tabbar_contact.dart';
+import 'package:project1/tabbar_home.dart';
 
 void main() {
   runApp(const TabBarExample());

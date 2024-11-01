@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:project1/gesture.dart';
 
+void main() {
+  runApp(const TabBarHome());
+}
 class TabBarHome extends StatelessWidget {
   const TabBarHome({Key? key}) : super(key: key);
 
