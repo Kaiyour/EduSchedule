@@ -1,23 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:project1/gesture.dart';
+
 
 void main() {
-  runApp(const TabBarHome());
+  runApp(const Home());
 }
-class TabBarHome extends StatelessWidget {
-  const TabBarHome({Key? key}) : super(key: key);
+
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(20),
-      padding: const EdgeInsets.all(20),
-      child: const Text(
-        'Home Page',
-        style: TextStyle(
-          fontFamily: "Allison",
-          fontSize: 50,
-          fontWeight: FontWeight.bold,
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          leading: Icon(Icons.menu), title: Text('Font Style'),
+        ),
+        body: Center(
+          child: Container(
+            child: const Text('MNC University',
+              style: const TextStyle(
+                backgroundColor: Color.fromRGBO(50, 168, 82, 1),
+                color: Colors.red, fontSize: 30,
+                fontWeight: FontWeight.w300,
+                fontStyle: FontStyle.italic, letterSpacing: 2,
+                wordSpacing: 3, overflow: TextOverflow.fade,
+                decoration: TextDecoration.underline, ), ),
+          ),
         ),
       ),
     );
